@@ -22,7 +22,7 @@ ENV FLASK_ENV=development
 ENV FLASK_APP=app.py
 ENV FLASK_DEBUG=1
 
-EXPOSE 80
+EXPOSE 5000
 
 
 
@@ -39,3 +39,7 @@ CMD ["python", "app.py"]
 #
 ## Define our command to be run when launching the container
 #CMD ["gunicorn", "app:app", "-b", "0.0.0.0:80", "--log-file", "-", "--access-logfile", "-", "--workers", "4", "--keep-alive", "0"]
+
+
+#documentation
+#https://github.com/mmumshad/simple-webapp-flask
